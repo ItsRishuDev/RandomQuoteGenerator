@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="main.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>Random Quote Generator</title>
+</head>
+
+<body class="background">
+  <h1 class="pb-3 pt-5 title">Random Quote Generator</h1>
+  <p class="para px-4">Random Quote Genrator is a platform which generate Random Quotes. Here you can generate single
+    and multiple quotes as per your requirements</p>
+
+  <nav class="mt-5 pt-2">
+    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+      <a class="nav-link font-style active" id="nav-single-tab" data-toggle="tab" href="#nav-single" role="tab"
+        aria-controls="nav-single" aria-selected="true">Single Quotes</a>
+      <a class="nav-link font-style" id="nav-profile-tab" data-toggle="tab" href="#nav-multi" role="tab"
+        aria-controls="nav-multi" aria-selected="false">Multi Quotes</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-single" role="tabpanel" aria-labelledby="nav-single-tab">
+      <div class="pt-3 justify-content-center">
+        <h4 class="font-style headline p-3">Generate Single Quote: </h4>
+        <div class="justify-content-center">
+          <button class="btn btn-primary center-btn" id="generate" onclick="generate()">Generate</button>
+        </div>
+        <h3 class="quote-style m-4" id="quote"></h3>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-multi" role="tabpanel" aria-labelledby="nav-multi-tab">
+      <div class="container pt-3">
+        <form class="mx-5">
+          <div class="form-group">
+            <label for="quotesNo" class="form-label">Number of Quotes</label>
+            <select class="form-control" id="quotesNo">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteType" class="form-label">Preference</label>
+            <select class="form-control" id="quoteType">
+              <option selected disabled>Choose...</option>
+              <option value="1">Music</option>
+              <option value="2">Travel</option>
+            </select>
+          </div>
+        </form>
+        <button class="btn btn-primary mx-5" onclick="moreQuotes()" id="btn">Generate</button>
+      </div>
+      <h3 id="quotesAll" class="quote-style m-4">
+
+      </h3>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="randomQuotes.js"></script>
+  <script src="customQuotes.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

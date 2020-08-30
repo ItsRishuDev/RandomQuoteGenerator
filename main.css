@@ -1,0 +1,44 @@
+.background{
+    background-image: url('images/math-U5mHl-uACe0-unsplash.jpg');
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+    color:white;
+}
+
+.para{
+    text-align: center;
+    font-size: large;
+    color: lightgoldenrodyellow;
+}
+
+.font-style{
+    font-size: larger;
+    font-weight: normal;
+    color: lightskyblue;
+}
+
+.font-style :hover{
+    color: lightskyblue;
+}
+
+.headline{
+    font-size: x-large;
+    text-align: center;
+}
+
+.center-btn{
+    margin-left: 45%;
+}
+
+.quote-style{
+    color: white;
+    text-align: center;
+}
+
+.form-label{
+    color: lightblue;
+    font-size: larger;
+}
