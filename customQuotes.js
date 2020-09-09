@@ -1,7 +1,7 @@
 let morequotes = [];
 
-function randomNumber(){
-    randomNum = Math.floor(Math.random() * 10);
+function randomNumber(length){
+    randomNum = Math.floor(Math.random() * length);
     return randomNum;
 }
 
@@ -16,13 +16,13 @@ function moreQuotes(){
     console.log(quoteType);
     if (quoteType == 1){
         for(let i=0; i<noOfQuotes; i++){
-            morequotes.push('<br>' + musicQuotes[randomNumber()] + ' ' + midQuote[randomNumber()] + ' ' + lastQuote[randomNumber()] );
+            morequotes.push('<br>' + musicQuotes[randomNumber(musicQuotes.length)] + ' ' + midQuote[randomNumber(midQuote.length)] + ' ' + lastQuote[randomNumber(lastQuote.length)] );
         }
         document.getElementById('quotesAll').innerHTML = morequotes;
     }
     else{
         for(let i=0; i<noOfQuotes; i++){
-            morequotes.push('<br>' + travelQuotes[randomNumber()] + ' ' + midQuote[randomNumber()] + ' ' + lastQuote[randomNumber()]);
+            morequotes.push('<br>' + travelQuotes[randomNumber(travelQuotes.length)] + ' ' + midQuote[randomNumber(midQuote.length)] + ' ' + lastQuote[randomNumber(lastQuote.length)]);
         }
         document.getElementById('quotesAll').innerHTML = morequotes;
     }
